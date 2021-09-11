@@ -13,13 +13,13 @@
     </div>
     <div class="form-wrapper">
       <div class="w-form">
-        <form id="contact" name="contact">
+        <form id="contact" name="contact" @submit.prevent="submit">
           <div class="bottom-spaced w-row">
             <div class="w-col w-col-6">
               <div>
                 <label class="label">Name</label><input
                   id="field"
-                  v-model="name"
+                  v-model="formData.name"
                   type="text"
                   class="input w-input"
                   maxlength="256"
@@ -33,7 +33,7 @@
               <div>
                 <label class="label">Email</label><input
                   id="field-2"
-                  v-model="email"
+                  v-model="formData.email"
                   type="email"
                   class="input w-input"
                   maxlength="256"
@@ -47,7 +47,7 @@
           <div class="side-padded">
             <label for="Message" class="label">Your Message</label><textarea
               id="Message"
-              v-model="message"
+              v-model="formData.message"
               placeholder="Hi, I need ABC for XYX, How soon can we have a discussion regarding this?"
               maxlength="5000"
               name="Message"
@@ -56,8 +56,8 @@
             />
           </div>
           <div class="side-padded">
-            <button type="submit" form="contact" href="#" class="button w-button">
-              send message
+            <button :disabled="submitting" type="submit" form="contact" href="#" class="button w-button">
+              {{ submitting ? 'Please wait...' : 'send message' }}
             </button>
           </div>
         </form>
@@ -83,6 +83,16 @@
 
 <script>
 export default {
+  data () {
+    return {
+      formData: {
+        name: '',
+        email: '',
+        message: ''
+      },
+      submitting: false
+    }
+  },
 
   head () {
     return {
@@ -93,12 +103,37 @@ export default {
       }
     }
   },
+
   mounted () {
     this.$nextTick(() => {
       this.$initWebflow()
     })
-  }
+  },
 
+  methods: {
+    submit () {
+      this.submitting = true
+
+      const url = ''
+      const req = {
+
+      }
+
+      this.$axios.post(url, req, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+        .then(() => {
+          this.submitting = false
+          this.$toast.success('Successfully sent')
+        })
+        .catch(() => {
+          this.submitting = false
+          this.$toast.success('Please try again')
+        })
+    }
+  }
 }
 </script>
 
