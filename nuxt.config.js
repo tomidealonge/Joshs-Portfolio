@@ -19,15 +19,30 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [{
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'
+    },
+    {
+      src: '/override-alert.js'
+    },
+    {
+      src: '/webflow.js'
+    }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/css/normalize.css',
+    '@/assets/css/webflow.css',
+    '@/assets/css/joshs.webflow.css',
+    '@/assets/css/main.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/webflow.client'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
