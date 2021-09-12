@@ -137,6 +137,12 @@ export default {
         }
       ]
     }
+  },
+
+  mounted () {
+    this.$nextTick(() => {
+      this.$initWebflow()
+    })
   }
 }
 </script>
