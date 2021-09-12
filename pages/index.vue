@@ -68,16 +68,12 @@
       <div class="completed-projects-flex">
         <nuxt-link to="/projects/cw" class="project cw w-inline-block">
           <div class="project-description-block">
-            <div>
-              <div>
+            <div class="project-description-inner">
+              <div class="project-name">
                 <h4>CW Real Estate -<br>Rebrand</h4>
               </div>
               <div
-                v-gsap.set="{
-                  opacity: 0,
-                  translateY: 15
-                }"
-                class="view-casestudy"
+                class="project-view-prompt"
               >
                 <p class="inline">
                   View full casestudy
@@ -87,19 +83,13 @@
             </div>
           </div>
         </nuxt-link>
-        <div class="project change360">
+        <nuxt-link to="#" class="project change360">
           <div class="project-description-block">
-            <div>
-              <div>
+            <div class="project-description-inner">
+              <div class="project-name">
                 <h4>Change360 -<br>Branding</h4>
               </div>
-              <div
-                v-gsap.set="{
-                  opacity: 0,
-                  translateY: 15
-                }"
-                class="view-casestudy"
-              >
+              <div class="project-view-prompt">
                 <p class="inline">
                   View full casestudy
                 </p>
@@ -107,7 +97,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </nuxt-link>
       </div>
       <div class="view-all-button-wrapper">
         <nuxt-link data-w-id="451024d8-2e16-63a8-f3bd-4fa9ed8be32c" to="/projects" class="button-w-arrow w-inline-block">

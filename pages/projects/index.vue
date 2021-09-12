@@ -26,7 +26,7 @@
       <div class="completed-projects-flex">
         <nuxt-link to="/projects/cw" class="project cw w-inline-block">
           <div class="project-description-block">
-            <div>
+            <div class="project-description-inner">
               <div class="project-name">
                 <h4>CW Real Estate -<br>Rebrand</h4>
               </div>
@@ -39,45 +39,51 @@
             </div>
           </div>
         </nuxt-link>
-        <a href="#" class="project change360 w-inline-block">
+        <nuxt-link to="#" class="project change360 w-inline-block">
           <div class="project-description-block">
-            <div>
+            <div class="project-description-inner">
               <div class="project-name">
                 <h4>Change360 -<br>Branding</h4>
               </div>
               <div class="project-view-prompt">
-                <p class="inline">View project</p>
+                <p class="inline">
+                  View project
+                </p>
                 <div class="inline-arrow" />
               </div>
             </div>
           </div>
-        </a>
-        <a href="#" class="project onestop w-inline-block">
+        </nuxt-link>
+        <nuxt-link to="#" class="project onestop w-inline-block">
           <div class="project-description-block white">
-            <div>
+            <div class="project-description-inner">
               <div class="project-name">
                 <h4>OneStop -<br>Branding</h4>
               </div>
               <div class="project-view-prompt">
-                <p class="inline">View project</p>
+                <p class="inline">
+                  View project
+                </p>
                 <div class="inline-arrow white" />
               </div>
             </div>
           </div>
-        </a>
-        <a href="#" class="project templice w-inline-block">
+        </nuxt-link>
+        <nuxt-link to="#" class="project templice w-inline-block">
           <div class="project-description-block white">
-            <div>
+            <div class="project-description-inner">
               <div class="project-name">
                 <h4>Templice - Chrome Extension UI Design</h4>
               </div>
               <div class="project-view-prompt">
-                <p class="inline">View project</p>
+                <p class="inline">
+                  View project
+                </p>
                 <div class="inline-arrow white" />
               </div>
             </div>
           </div>
-        </a>
+        </nuxt-link>
       </div>
     </div>
     <FooterComponent />

@@ -85,7 +85,7 @@
             />
           </div>
           <div class="side-padded">
-            <button :disabled="submitting" type="submit" form="contact" href="#" class="button w-button">
+            <button :disabled="submitting" type="submit" form="contact" href="#" class="button duration-500 transition-all ease-in-out w-button">
               {{ submitting ? 'Please wait...' : 'send message' }}
             </button>
           </div>
@@ -102,7 +102,7 @@
         </div>
         <div>
           <div>
-            Designed by Josh x Developed by Tomide <a href="#" class="inpage-link">(Twitter)</a>
+            Designed by Josh x Developed by <a href="https://twitter.com/tomidealonge" target="_blank" class="inpage-link">Tomide</a>
           </div>
         </div>
       </div>
