@@ -129,7 +129,58 @@ export default {
         lang: 'en',
         'data-wf-page': '61223bf513aab45c087ec67a',
         'data-wf-site': '6121b5d9411cba6065f482ec'
-      }
+      },
+      title: 'Josh | Contact Me',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Got a proposal, job offer or just want to say hello? Go ahead and fill the form!'
+        },
+        {
+          name: 'theme-color',
+          property: 'theme-color',
+          content: '#EA5F3A'
+        },
+        {
+          name: 'apple-mobile-web-app-title',
+          property: 'apple-mobile-web-app-title',
+          content: 'Josh | Contact Me'
+        },
+        {
+          name: 'og:title',
+          property: 'og:title',
+          content: 'Josh | Contact Me'
+        },
+        {
+          name: 'og:description',
+          property: 'og:description',
+          content:
+            'Got a proposal, job offer or just want to say hello? Go ahead and fill the form!'
+        },
+        {
+          name: 'og:site_name',
+          property: 'og:site_name',
+          content: "Josh's Portfolio "
+        },
+        {
+          name: 'twitter:title',
+          property: 'twitter:title',
+          content: 'Josh | Contact Me'
+        },
+        {
+          name: 'twitter:site_name',
+          property: 'og:site_name',
+          content: "Josh's Portfolio "
+        },
+        {
+          name: 'twitter:description',
+          property: 'twitter:description',
+          content:
+            'Got a proposal, job offer or just want to say hello? Go ahead and fill the form!'
+        }
+      ]
     }
   },
 

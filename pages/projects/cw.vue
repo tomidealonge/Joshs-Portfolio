@@ -84,7 +84,58 @@ export default {
         lang: 'en',
         'data-wf-page': '612a48e7f7e91cfdd4f76e30',
         'data-wf-site': '6121b5d9411cba6065f482ec'
-      }
+      },
+      title: 'Josh | CW',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'CW is a real estate company that operates in Lagos Nigeria. The company’s old logo was tacky and outdated. Myself and a couple of smart lads were tasked to come up with a brand refresh; something more memorable and simple alongside creating new brand communication materials'
+        },
+        {
+          name: 'theme-color',
+          property: 'theme-color',
+          content: '#EA5F3A'
+        },
+        {
+          name: 'apple-mobile-web-app-title',
+          property: 'apple-mobile-web-app-title',
+          content: 'Josh | CW'
+        },
+        {
+          name: 'og:title',
+          property: 'og:title',
+          content: 'Josh | CW'
+        },
+        {
+          name: 'og:description',
+          property: 'og:description',
+          content:
+            'CW is a real estate company that operates in Lagos Nigeria. The company’s old logo was tacky and outdated. Myself and a couple of smart lads were tasked to come up with a brand refresh; something more memorable and simple alongside creating new brand communication materials'
+        },
+        {
+          name: 'og:site_name',
+          property: 'og:site_name',
+          content: "Josh's Portfolio "
+        },
+        {
+          name: 'twitter:title',
+          property: 'twitter:title',
+          content: 'Josh | CW'
+        },
+        {
+          name: 'twitter:site_name',
+          property: 'og:site_name',
+          content: "Josh's Portfolio "
+        },
+        {
+          name: 'twitter:description',
+          property: 'twitter:description',
+          content:
+            'CW is a real estate company that operates in Lagos Nigeria. The company’s old logo was tacky and outdated. Myself and a couple of smart lads were tasked to come up with a brand refresh; something more memorable and simple alongside creating new brand communication materials'
+        }
+      ]
     }
   }
 }

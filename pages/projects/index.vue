@@ -16,7 +16,7 @@
               duration: 0.6,
             }"
           >
-            <h5>Cross-section of various types of projects I&#x27;ve worked on in the past. Enjoy!</h5>
+            <h5>Cross-section of various types of projects I've worked on in the past. Enjoy!</h5>
           </div>
         </div>
       </div>
@@ -99,9 +99,61 @@ export default {
         lang: 'en',
         'data-wf-page': '6122211eadcedbc766192cbd',
         'data-wf-site': '6121b5d9411cba6065f482ec'
-      }
+      },
+      title: 'Josh | Completed Projects',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            "Cross-section of various types of projects I've worked on in the past. Enjoy!"
+        },
+        {
+          name: 'theme-color',
+          property: 'theme-color',
+          content: '#EA5F3A'
+        },
+        {
+          name: 'apple-mobile-web-app-title',
+          property: 'apple-mobile-web-app-title',
+          content: 'Josh | Completed Projects'
+        },
+        {
+          name: 'og:title',
+          property: 'og:title',
+          content: 'Josh | Completed Projects'
+        },
+        {
+          name: 'og:description',
+          property: 'og:description',
+          content:
+            "Cross-section of various types of projects I've worked on in the past. Enjoy!"
+        },
+        {
+          name: 'og:site_name',
+          property: 'og:site_name',
+          content: "Josh's Portfolio "
+        },
+        {
+          name: 'twitter:title',
+          property: 'twitter:title',
+          content: 'Josh | Completed Projects'
+        },
+        {
+          name: 'twitter:site_name',
+          property: 'og:site_name',
+          content: "Josh's Portfolio "
+        },
+        {
+          name: 'twitter:description',
+          property: 'twitter:description',
+          content:
+            "Cross-section of various types of projects I've worked on in the past. Enjoy!"
+        }
+      ]
     }
   },
+
   mounted () {
     this.$nextTick(() => {
       this.$initWebflow()

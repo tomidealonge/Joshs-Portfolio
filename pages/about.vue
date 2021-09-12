@@ -80,7 +80,58 @@ export default {
         lang: 'en',
         'data-wf-page': '6121cee34f585465280d61eb',
         'data-wf-site': '6121b5d9411cba6065f482ec'
-      }
+      },
+      title: "Josh | Hi, I'm a visual designer, based in Lagos",
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'I’m passionate about solving business problems &amp; crafting beautiful experiences using design.'
+        },
+        {
+          name: 'theme-color',
+          property: 'theme-color',
+          content: '#EA5F3A'
+        },
+        {
+          name: 'apple-mobile-web-app-title',
+          property: 'apple-mobile-web-app-title',
+          content: "Josh | Hi, I'm a visual designer, based in Lagos"
+        },
+        {
+          name: 'og:title',
+          property: 'og:title',
+          content: "Josh | Hi, I'm a visual designer, based in Lagos"
+        },
+        {
+          name: 'og:description',
+          property: 'og:description',
+          content:
+            'I’m passionate about solving business problems &amp; crafting beautiful experiences using design.'
+        },
+        {
+          name: 'og:site_name',
+          property: 'og:site_name',
+          content: "Josh's Portfolio "
+        },
+        {
+          name: 'twitter:title',
+          property: 'twitter:title',
+          content: "Josh | Hi, I'm a visual designer, based in Lagos"
+        },
+        {
+          name: 'twitter:site_name',
+          property: 'og:site_name',
+          content: "Josh's Portfolio "
+        },
+        {
+          name: 'twitter:description',
+          property: 'twitter:description',
+          content:
+            'I’m passionate about solving business problems &amp; crafting beautiful experiences using design.'
+        }
+      ]
     }
   },
 
