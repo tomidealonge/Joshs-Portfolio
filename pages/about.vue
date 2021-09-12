@@ -3,8 +3,25 @@
     <div class="header about-us">
       <div class="about-header-inner">
         <div class="about-hero">
-          <h3>I’m a multidisciplinary designer passionate about solving business problems &amp; crafting beautiful experiences using design.</h3>
-          <a href="#about-me" class="next-section-block w-inline-block" />
+          <h3
+            v-gsap.from="{
+              y: 80,
+              duration: 0.7,
+              opacity: 0
+            }"
+            class="about-hero-text"
+          >
+            I’m a multidisciplinary designer passionate about solving business problems &amp; crafting beautiful experiences using design.
+          </h3>
+          <a
+            v-gsap.from="{
+              y: -80,
+              duration: 0.7,
+              opacity: 0
+            }"
+            href="#about-me"
+            class="next-section-block w-inline-block"
+          />
         </div>
         <div class="about-header-image-wrapper">
           <div data-w-id="2d8ed8e2-3b3f-f8d9-5c55-88934f957832" class="floating-tech-icons ps" />
@@ -66,15 +83,22 @@ export default {
       }
     }
   },
+
   mounted () {
     this.$nextTick(() => {
       this.$initWebflow()
     })
+  },
+
+  methods: {
+
   }
 
 }
 </script>
 
 <style scoped>
-
+.next-section-block{
+  transition: none;
+}
 </style>

@@ -2,9 +2,20 @@
   <div>
     <div class="header projects">
       <div class="hero-wrapper">
-        <div class="projects-hero">
+        <div
+          v-gsap.from="{
+            y: -50,
+            duration: 0.6,
+          }"
+          class="projects-hero"
+        >
           <h1>Completed<br>Projects</h1>
-          <div>
+          <div
+            v-gsap.from="{
+              y: 100,
+              duration: 0.6,
+            }"
+          >
             <h5>Cross-section of various types of projects I&#x27;ve worked on in the past. Enjoy!</h5>
           </div>
         </div>
@@ -75,7 +86,7 @@
 
 <script>
 export default {
-
+  scrollToTop: true,
   head () {
     return {
       htmlAttrs: {
@@ -93,3 +104,9 @@ export default {
 
 }
 </script>
+
+<style scoped>
+body {
+  scroll-behavior: smooth;
+}
+</style>

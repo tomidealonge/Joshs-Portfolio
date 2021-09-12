@@ -3,9 +3,38 @@
     <div class="header contact">
       <div class="hero-wrapper contact">
         <div>
-          <h1>Let&#x27;s make great <br>stuff together! 🚀</h1>
+          <h1>
+            <div
+              v-gsap.from="{
+                opacity: 0,
+                x: 50,
+                duration: 0.6
+              }"
+              class="heading-text"
+            >
+              Let&#x27;s make great
+            </div>
+            <div
+              v-gsap.from="{
+                opacity: 0,
+                x: -60,
+                duration: 0.6
+              }"
+              class="heading-text"
+            >
+              stuff together! 🚀
+            </div>
+          </h1>
         </div>
-        <div class="contact-sub-hero">
+        <div
+          v-gsap.from="{
+            opacity: 0,
+            y: 10,
+            duration: 0.6,
+            delay: 0.3
+          }"
+          class="contact-sub-hero"
+        >
           <h5>Got a proposal, job offer or just want to say hello? Go ahead and fill the form!</h5>
         </div>
       </div>
@@ -138,5 +167,7 @@ export default {
 </script>
 
 <style scoped>
-
+.heading-text {
+  max-height: 200px;
+}
 </style>

@@ -5,10 +5,47 @@
       <div class="hero-wrapper">
         <div>
           <h1 class="hero-h1">
-            Hello I&#x27;m Josh, <br>A Visual Designer<br>Based in Lagos
+            <div
+              v-gsap.from="{
+                opacity: 0,
+                x: 50,
+                duration: 0.7,
+              }"
+              class="animated-text"
+            >
+              Hello I'm Josh,
+            </div>
+            <div
+              v-gsap.from="{
+                opacity: 0,
+                x: -50,
+                duration: 0.7
+              }"
+              class="animated-text"
+            >
+              A Visual Designer
+            </div>
+            <div
+              v-gsap.from="{
+                opacity: 0,
+                x: 50,
+                duration: 0.7
+              }"
+              class="animated-text"
+            >
+              Based in Lagos
+            </div>
           </h1>
         </div>
-        <div class="hero-subtext">
+        <div
+          v-gsap.from="{
+            opacity: 0,
+            y: 10,
+            duration: 0.6,
+            delay: 0.3
+          }"
+          class="hero-subtext"
+        >
           <h5>I’m passionate about solving business problems &amp; crafting beautiful experiences using design.</h5>
         </div>
         <nuxt-link to="/projects" class="button w-button">
@@ -35,7 +72,13 @@
               <div>
                 <h4>CW Real Estate -<br>Rebrand</h4>
               </div>
-              <div>
+              <div
+                v-gsap.set="{
+                  opacity: 0,
+                  translateY: 15
+                }"
+                class="view-casestudy"
+              >
                 <p class="inline">
                   View full casestudy
                 </p>
@@ -50,7 +93,13 @@
               <div>
                 <h4>Change360 -<br>Branding</h4>
               </div>
-              <div>
+              <div
+                v-gsap.set="{
+                  opacity: 0,
+                  translateY: 15
+                }"
+                class="view-casestudy"
+              >
                 <p class="inline">
                   View full casestudy
                 </p>
@@ -83,11 +132,26 @@ export default {
       }
     }
   },
+
   mounted () {
+    // this.splitText()
     this.$nextTick(() => {
       this.$initWebflow()
     })
+  },
+
+  methods: {
+    // splitText () {
+    //   const elements = document.querySelectorAll('.animated-text')
+
+    // }
   }
 
 }
 </script>
+
+<style scoped>
+.animated-text {
+  height: auto;
+}
+</style>

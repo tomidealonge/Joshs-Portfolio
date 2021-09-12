@@ -1,0 +1,9 @@
+.transition-page-enter-active,
+.transition-page-leave-active {
+  transition: all 500ms ease-in-out;
+}
+
+.transition-page-enter,
+.transition-page-leave-to {
+  opacity: 0.2;
+}

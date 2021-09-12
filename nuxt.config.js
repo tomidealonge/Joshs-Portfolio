@@ -54,8 +54,11 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    'nuxt-gsap-module'
   ],
+
+  pageTransition: 'transition-page',
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

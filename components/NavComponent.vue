@@ -16,7 +16,7 @@
       <div
         data-w-id="e3cd7998-0cec-122e-4f4a-fae4e0d10f66"
         data-animation-type="lottie"
-        data-src="@/assets/documents/hamburger-menu.json"
+        data-src="/hamburger-menu.json"
         data-loop="0"
         data-direction="1"
         data-autoplay="0"
