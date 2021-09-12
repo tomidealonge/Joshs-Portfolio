@@ -145,7 +145,9 @@ export default {
 
       const url = ''
       const req = {
-
+        'entry.850324179': this.formData.name,
+        'entry.1161803101': this.formData.email,
+        'entry.2123848989': this.formData.message
       }
 
       this.$axios.post(url, req, {
